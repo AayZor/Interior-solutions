@@ -8,7 +8,7 @@ pipeline{
     }
     stage('Compile-package'){
       steps {
-        bat ''
+        bat 'php connection.php'
       }
     }
   }
