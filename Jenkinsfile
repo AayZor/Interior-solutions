@@ -1,8 +1,5 @@
 pipeline{
   agent any
-  tools { 
-        maven '3.8.4' 
-    }
   stages{
     stage('SCM Checkout'){
       steps {
@@ -11,7 +8,7 @@ pipeline{
     }
     stage('Compile-package'){
       steps {
-        bat 'mvn package'
+        bat ''
       }
     }
   }
