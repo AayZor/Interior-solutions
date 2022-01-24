@@ -1,8 +1,5 @@
 pipeline{
   agent any
-  tools {
-    maven "3.8.4"
-  }
   stages{
     stage('SCM Checkout'){
       steps {
@@ -11,6 +8,7 @@ pipeline{
     }
     stage('Compile-package'){
       steps {
+        def mvnHome = tool name: '3.8.4', type: 'maven'
         bat 'mvn package'
       }
     }
