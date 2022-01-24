@@ -1,5 +1,5 @@
 pipeline{
-  stage('SCM Checkout'){
+  stages('SCM Checkout'){
     steps {
       git 'https://github.com/AayZor/Interior-solutions'
     }
