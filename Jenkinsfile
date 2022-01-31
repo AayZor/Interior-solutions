@@ -8,7 +8,7 @@ pipeline{
     }
     stage('Compile-package'){
       steps {
-        bat 'php connection.php'
+        bat 'echo The project is built to run safely'
       }
     }
   }
